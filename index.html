@@ -1,362 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jinusha | Cloud Engineer</title>
+    <title>Jinusha J J | Cloud Engineer</title>
+
+    <meta name="description"
+        content="Jinusha - Aspiring Cloud Engineer skilled in AWS, Linux, Git and DevOps.">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <div class="logo">
-                <span></span>
-            </div>
+<!-- ================= NAVBAR ================= -->
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            Jinu<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#learning">Learning</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+</header>
 
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+<!-- ================= HOME ================= -->
 
-        <div class="hero-content">
+<section class="hero" id="home">
 
-            <p class="intro">HELLO, I'M</p>
+    <div class="hero-left">
 
-            <h1>
-                Jinusha
-                <br>
-                <span>Cloud Engineer</span>
-            </h1>
-
-            <p>
-                I build, deploy and manage cloud infrastructure
-                using AWS and DevOps technologies.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn btn-primary">
-                    View My Projects
-                </a>
-
-                <a href="#contact" class="btn btn-outline">
-                    Contact Me
-                </a>
-
-            </div>
-
+        <div class="hello">
+            HELLO, I'M
+            <span></span>
         </div>
 
-    </section>
-
-
-    <!-- About Section -->
-    <section id="about">
-
-        <div class="section-title">
-
-            <h2>About <span>Me</span></h2>
-
-            <p>Get to know me</p>
-
-        </div>
-
-        <div class="about-content">
-
-            <p>
-                I am a Computer Science graduate and an aspiring Cloud Engineer
-                with a strong interest in cloud computing, AWS and DevOps.
-                I enjoy learning new technologies and building practical
-                cloud-based solutions.
-            </p>
-
-            <p>
-                Currently, I am developing my skills in AWS, Linux, Git,
-                networking and cloud infrastructure while working on
-                hands-on projects.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Skills Section -->
-    <section id="skills">
-
-        <div class="section-title">
-
-            <h2>My <span>Skills</span></h2>
-
-            <p>Technologies I work with</p>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <div class="icon">☁️</div>
-
-                <h3>AWS Cloud</h3>
-
-                <p>
-                    EC2, S3, IAM, VPC, RDS, Lambda,
-                    CloudWatch and more.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="icon">⚙️</div>
-
-                <h3>DevOps</h3>
-
-                <p>
-                    Git, GitHub, GitHub Actions
-                    and CI/CD fundamentals.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="icon">🐧</div>
-
-                <h3>Linux</h3>
-
-                <p>
-                    Linux commands, server management
-                    and basic shell operations.
-                </p>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <div class="icon">🌐</div>
-
-                <h3>Networking</h3>
-
-                <p>
-                    VPC, Security Groups, DNS,
-                    Load Balancer and networking basics.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Projects Section -->
-    <section id="projects">
-
-        <div class="section-title">
-
-            <h2>My <span>Projects</span></h2>
-
-            <p>Some of my cloud and DevOps projects</p>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <div class="project-card">
-
-                <h3>AWS Web Application</h3>
-
-                <p>
-                    Deployed a web application using AWS EC2
-                    and configured security groups and
-                    Elastic IP for server access.
-                </p>
-
-                <div class="project-tags">
-
-                    <span>AWS</span>
-                    <span>EC2</span>
-                    <span>Linux</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Load Balancer & Auto Scaling</h3>
-
-                <p>
-                    Created a scalable AWS infrastructure using
-                    Application Load Balancer, Target Groups
-                    and Auto Scaling.
-                </p>
-
-                <div class="project-tags">
-
-                    <span>ALB</span>
-                    <span>Auto Scaling</span>
-                    <span>AWS</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Cloud Monitoring</h3>
-
-                <p>
-                    Configured Amazon CloudWatch to monitor
-                    AWS resources and created alarms
-                    for infrastructure monitoring.
-                </p>
-
-                <div class="project-tags">
-
-                    <span>CloudWatch</span>
-                    <span>AWS</span>
-                    <span>Monitoring</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="project-card">
-
-                <h3>Git & GitHub Project</h3>
-
-                <p>
-                    Managed source code using Git and GitHub,
-                    including repositories, branches,
-                    commits and remote repositories.
-                </p>
-
-                <div class="project-tags">
-
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>DevOps</span>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-    <!-- Education Section -->
-    <section id="education">
-
-        <div class="section-title">
-
-            <h2>My <span>Education</span></h2>
-
-        </div>
-
-
-        <div class="education-card">
-
-            <h3>B.Sc. Computer Science</h3>
-
-            <p>
-                St. Alphonse College of Arts and Science
-            </p>
-
-            <p>
-                Manonmaniam Sundaranar University
-            </p>
-
-            <p>
-                2023 - 2026
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact">
-
-        <div class="section-title">
-
-            <h2>Let's <span>Connect</span></h2>
-
-            <p>Have a project or opportunity? Let's talk.</p>
-
-        </div>
-
-
-        <div class="contact-box">
-
-            <p>
-                I am currently looking for opportunities
-                in Cloud Engineering and DevOps.
-            </p>
-
-
-            <div class="contact-links">
-
-                <a href="mailto:yourmail@gmail.com">
-                    Email
-                </a>
-
-                <a href="https://www.linkedin.com/" target="_blank">
-                    LinkedIn
-                </a>
-
-                <a href="https://github.com/" target="_blank">
-                    GitHub
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
+        <h1>
+            Jinusha J J
+            <br>
+            <span>Cloud Engineer</span>
+        </h1>
 
         <p>
-            © 2026 <span>Jinusha</span>. Built with passion for Cloud & DevOps.
+            I build, deploy and manage cloud infrastructure
+            using AWS and DevOps technologies.
         </p>
 
-    </footer>
+        <div class="hero-buttons">
+
+            <a href="#projects" class="btn primary-btn">
+                ☁ View My Projects
+            </a>
+
+            <a href="resume.pdf" download class="btn outline-btn">
+                📄 Download Resume
+            </a>
+
+        </div>
+
+        <div class="social-links">
+
+            <a href="https://github.com/YOUR-GITHUB-USERNAME"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
 
 
-    <script src="script.js"></script>
+    <!-- RIGHT SIDE CLOUD DESIGN -->
+
+    <div class="hero-right">
+
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+
+        <div class="floating-card aws">
+            <strong>aws</strong>
+            <small>AWS Cloud</small>
+        </div>
+
+        <div class="floating-card git">
+            <strong>◆</strong>
+            <small>Git</small>
+        </div>
+
+        <div class="floating-card linux">
+            <strong>🐧</strong>
+            <small>Linux</small>
+        </div>
+
+        <div class="floating-card devops">
+            <strong>∞</strong>
+            <small>CI/CD</small>
+        </div>
+
+        <div class="cloud">
+            ☁
+        </div>
+
+        <div class="cloud-arrows">
+            ↑ &nbsp; ↑ &nbsp; ↑
+        </div>
+
+        <div class="laptop">
+
+            <div class="screen">
+
+                <div>$ aws ec2</div>
+                <div>$ git push</div>
+                <div>$ deploy...</div>
+
+                <div class="success">
+                    ✓ deployment successful
+                </div>
+
+            </div>
+
+            <div class="keyboard"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section" id="about">
+
+    <div class="section-heading">
+        <p>GET TO KNOW ME</p>
+        <h2>About <span>Me</span></h2>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-card">
+
+            <h3>Who I Am</h3>
+
+            <p>
+                I am a B.Sc. Computer Science graduate and an aspiring
+                Cloud Engineer with a strong interest in AWS, cloud
+                infrastructure and DevOps.
+            </p>
+
+            <p>
+                I enjoy learning new technologies and gaining practical
+                experience by building and configuring cloud-based
+                environments.
+            </p>
+
+        </div>
+
+        <div class="about-highlights">
+
+            <div>
+                <span>☁️</span>
+                <h3>AWS</h3>
+                <p>Cloud Infrastructure</p>
+            </div>
+
+            <div>
+                <span>⚙️</span>
+                <h3>DevOps</h3>
+                <p>Deployment & Automation</p>
+            </div>
+
+            <div>
+                <span>💻</span>
+                <h3>Linux</h3>
+                <p>Server Environment</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section class="section" id="skills">
+
+    <div class="section-heading">
+        <p>WHAT I WORK WITH</p>
+        <h2>Technical <span>Skills</span></h2>
+    </div>
+
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+            <div class="skill-icon">☁️</div>
+            <h3>AWS</h3>
+            <p>
+                EC2, S3, IAM, VPC, RDS, Lambda,
+                CloudWatch, CloudFront, Route 53,
+                Load Balancer and Auto Scaling.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🐧</div>
+            <h3>Linux</h3>
+            <p>
+                Linux commands, file management,
+                permissions and basic server operations.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🔧</div>
+            <h3>Git & GitHub</h3>
+            <p>
+                Git repositories, branches, commits,
+                remote repositories and GitHub workflows.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🌐</div>
+            <h3>Networking</h3>
+            <p>
+                VPC, Subnets, Security Groups,
+                IP addressing, DNS and Load Balancing.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">🚀</div>
+            <h3>DevOps</h3>
+            <p>
+                CI/CD concepts, deployment,
+                GitHub Actions and cloud automation basics.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">📊</div>
+            <h3>Monitoring</h3>
+            <p>
+                CloudWatch monitoring, alarms,
+                CloudTrail and infrastructure observation.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= LEARNING ================= -->
+
+<section class="section" id="learning">
+
+    <div class="section-heading">
+        <p>MY TECHNICAL JOURNEY</p>
+        <h2>What I've <span>Learned</span></h2>
+    </div>
+
+
+    <div class="learning-grid">
+
+        <div class="learning-card">
+            <span>01</span>
+            <h3>Cloud Computing</h3>
+            <p>
+                Understanding cloud concepts, infrastructure,
+                scalability, availability and cloud services.
+            </p>
+        </div>
+
+        <div class="learning-card">
+            <span>02</span>
+            <h3>AWS Infrastructure</h3>
+            <p>
+                Working with EC2, S3, IAM, VPC, RDS,
+                Load Balancer, Auto Scaling and Route 53.
+            </p>
+        </div>
+
+        <div class="learning-card">
+            <span>03</span>
+            <h3>Cloud Security</h3>
+            <p>
+                IAM permissions, Security Groups,
+                KMS and basic AWS security practices.
+            </p>
+        </div>
+
+        <div class="learning-card">
+            <span>04</span>
+            <h3>Monitoring</h3>
+            <p>
+                CloudWatch, alarms, CloudTrail
+                and cloud resource monitoring.
+            </p>
+        </div>
+
+        <div class="learning-card">
+            <span>05</span>
+            <h3>Git & GitHub</h3>
+            <p>
+                Version control, repositories,
+                branches, commits and remote workflows.
+            </p>
+        </div>
+
+        <div class="learning-card">
+            <span>06</span>
+            <h3>DevOps Fundamentals</h3>
+            <p>
+                CI/CD, deployment concepts,
+                automation and DevOps practices.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="section" id="projects">
+
+    <div class="section-heading">
+        <p>MY HANDS-ON WORK</p>
+        <h2>Featured <span>Projects</span></h2>
+    </div>
+
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+
+            <div class="project-number">01</div>
+
+            <h3>AWS EC2 Web Server</h3>
+
+            <p>
+                Created and configured an EC2 instance,
+                configured Security Groups and Elastic IP,
+                and worked with Linux-based server environments.
+            </p>
+
+            <div class="tags">
+                <span>AWS</span>
+                <span>EC2</span>
+                <span>Linux</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-number">02</div>
+
+            <h3>Load Balancer & Auto Scaling</h3>
+
+            <p>
+                Configured Target Groups, Application Load
+                Balancer and Auto Scaling concepts for
+                scalable application infrastructure.
+            </p>
+
+            <div class="tags">
+                <span>ALB</span>
+                <span>Target Group</span>
+                <span>Auto Scaling</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-number">03</div>
+
+            <h3>AWS Monitoring</h3>
+
+            <p>
+                Worked with Amazon CloudWatch to monitor
+                AWS resources and configure monitoring
+                alarms.
+            </p>
+
+            <div class="tags">
+                <span>CloudWatch</span>
+                <span>AWS</span>
+                <span>Monitoring</span>
+            </div>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-number">04</div>
+
+            <h3>Git & GitHub Workflow</h3>
+
+            <p>
+                Practiced Git repository management,
+                branches, commits, remote repositories
+                and GitHub-based source control.
+            </p>
+
+            <div class="tags">
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>DevOps</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EDUCATION ================= -->
+
+<section class="section" id="education">
+
+    <div class="section-heading">
+        <p>MY BACKGROUND</p>
+        <h2>Education & <span>Training</span></h2>
+    </div>
+
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span>2023 - 2026</span>
+
+                <h3>B.Sc. Computer Science</h3>
+
+                <p>
+                    St. Alphonse College of Arts and Science
+                </p>
+
+                <small>
+                    Manonmaniam Sundaranar University
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-content">
+
+                <span>Professional Training</span>
+
+                <h3>Cloud & DevOps Training</h3>
+
+                <p>
+                    Hands-on training in AWS Cloud,
+                    Linux, Git, GitHub and DevOps fundamentals.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= RESUME ================= -->
+
+<section class="resume-section">
+
+    <div class="resume-box">
+
+        <div>
+
+            <p>LOOKING FOR OPPORTUNITIES?</p>
+
+            <h2>
+                Let's build something
+                <span>amazing.</span>
+            </h2>
+
+            <p>
+                Download my resume to know more about my
+                skills, education and technical experience.
+            </p>
+
+        </div>
+
+        <a href="resume.pdf" download class="resume-btn">
+            📄 Download Resume
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section" id="contact">
+
+    <div class="section-heading">
+
+        <p>GET IN TOUCH</p>
+
+        <h2>Let's <span>Connect</span></h2>
+
+    </div>
+
+
+    <div class="contact-container">
+
+        <p>
+            I am currently looking for entry-level opportunities
+            in Cloud Engineering, AWS and DevOps.
+        </p>
+
+
+        <div class="contact-buttons">
+
+            <a href="mailto:YOUR-EMAIL@gmail.com">
+                📧 Email Me
+            </a>
+
+            <a href="https://github.com/YOUR-GITHUB-USERNAME"
+               target="_blank">
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME/"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © <span id="year"></span> Jinusha.
+        Built with ☁️ AWS & 💜 passion.
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
