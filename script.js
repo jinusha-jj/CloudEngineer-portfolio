@@ -1,22 +1,25 @@
 // ===============================
-// Cloud Engineer Portfolio
-// JavaScript
+// Portfolio JavaScript
 // ===============================
 
 
-// 1. Smooth scrolling for navigation links
+// Smooth scrolling
 document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-    link.addEventListener("click", function (e) {
+    link.addEventListener("click", function(event) {
 
-        e.preventDefault();
-
-        const target = document.querySelector(this.getAttribute("href"));
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
 
         if (target) {
+
+            event.preventDefault();
+
             target.scrollIntoView({
                 behavior: "smooth"
             });
+
         }
 
     });
@@ -24,43 +27,18 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 
-// 2. Scroll reveal animation
-const sections = document.querySelectorAll("section");
+// Navbar shadow on scroll
+window.addEventListener("scroll", function() {
 
-const revealSections = () => {
-
-    sections.forEach(section => {
-
-        const sectionTop = section.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-
-        if (sectionTop < windowHeight - 100) {
-            section.classList.add("show-section");
-        }
-
-    });
-
-};
-
-window.addEventListener("scroll", revealSections);
-
-revealSections();
-
-
-// 3. Navbar background while scrolling
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
 
     if (window.scrollY > 50) {
 
-        header.style.background = "rgba(8, 6, 18, 0.95)";
         header.style.boxShadow =
             "0 5px 30px rgba(139, 92, 246, 0.15)";
 
     } else {
 
-        header.style.background = "rgba(8, 6, 18, 0.75)";
         header.style.boxShadow = "none";
 
     }
@@ -68,44 +46,46 @@ window.addEventListener("scroll", () => {
 });
 
 
-// 4. Add hover effect to skill cards
-const skillCards = document.querySelectorAll(".skill-card");
+// Current year
+const year = document.getElementById("year");
 
-skillCards.forEach(card => {
-
-    card.addEventListener("mouseenter", () => {
-
-        card.style.transform = "translateY(-10px) scale(1.02)";
-
-    });
-
-    card.addEventListener("mouseleave", () => {
-
-        card.style.transform = "translateY(0) scale(1)";
-
-    });
-
-});
-
-
-// 5. Current year automatically updates in footer
-const year = new Date().getFullYear();
-
-const footerText = document.querySelector("footer p");
-
-if (footerText) {
-
-    footerText.innerHTML =
-        `© ${year} <span>Jinusha</span>. Built with passion for Cloud & DevOps.`;
-
+if (year) {
+    year.textContent = new Date().getFullYear();
 }
 
 
-// 6. Welcome message in browser console
-console.log(
-    "☁️ Welcome to Jinusha's Cloud Engineer Portfolio!"
+// Simple reveal animation
+const cards = document.querySelectorAll(
+    ".skill-card, .learning-card, .project-card"
 );
 
-console.log(
-    "💜 Built with HTML, CSS & JavaScript"
+const observer = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.style.opacity = "1";
+                entry.target.style.transform = "translateY(0)";
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
 );
+
+
+cards.forEach(card => {
+
+    card.style.opacity = "0";
+    card.style.transform = "translateY(25px)";
+    card.style.transition = "all .7s ease";
+
+    observer.observe(card);
+
+});
